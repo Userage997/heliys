@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heliys | Портфолио</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Первый экран -->
+    <section id="screen1" class="screen active">
+        <div class="container">
+            <header>
+                <button class="creator-btn" onclick="window.open('https://t.me/metstyle', '_blank')">
+                    <i class="fas fa-code"></i> Создатель сайта
+                </button>
+            </header>
+            
+            <div class="main-content">
+                <h1 class="title">HELIYS</h1>
+                <p class="subtitle">Профессиональный видеомонтаж и продакшн</p>
+                
+                <div class="buttons">
+                    <button class="btn btn-primary" onclick="showScreen2()">
+                        <i class="fas fa-user"></i> О владельце
+                    </button>
+                    <button class="btn btn-secondary" onclick="window.open('https://t.me/heliys_sorry', '_blank')">
+                        <i class="fas fa-external-link-alt"></i> Перейти в проект
+                    </button>
+                </div>
+            </div>
+            
+            <footer>
+                <p>Адаптер-портфолио для GitHub</p>
+            </footer>
+        </div>
+    </section>
+    
+    <!-- Второй экран -->
+    <section id="screen2" class="screen">
+        <div class="container">
+            <header>
+                <button class="creator-btn" onclick="window.open('https://t.me/metstyle', '_blank')">
+                    <i class="fas fa-code"></i> Создатель сайта
+                </button>
+                <button class="back-btn" onclick="showScreen1()">
+                    <i class="fas fa-arrow-left"></i> Назад
+                </button>
+            </header>
+            
+            <div class="profile-section">
+                <div class="profile-header">
+                    <h2>О владельце</h2>
+                    <div class="specializations">
+                        <span class="specialization">Видеомонтажер</span>
+                        <span class="specialization">Оцифровщик</span>
+                    </div>
+                </div>
+                
+                <div class="profile-content">
+                    <div class="description">
+                        <p><strong>Heliys</strong> — профессионал в области видеомонтажа и оцифровки с многолетним опытом работы. Специализируется на создании качественного видеоконтента для различных платформ и целевых аудиторий.</p>
+                        <p>Использует современные технологии и программное обеспечение для достижения наилучшего результата. Работает с различными форматами видео, обеспечивая высокое качество обработки и цветокоррекции.</p>
+                        <p>Каждый проект — индивидуальный подход, внимание к деталям и соблюдение сроков. Предлагает полный цикл услуг: от консультации и разработки концепции до финального монтажа и подготовки контента к публикации.</p>
+                    </div>
+                    
+                    <div class="profile-buttons">
+                        <button class="profile-btn" onclick="window.open('https://t.me/heliyswest', '_blank')">
+                            <i class="fab fa-telegram"></i>
+                            <span>Написать мне</span>
+                        </button>
+                        <button class="profile-btn" onclick="window.open('priceheliys', '_blank')">
+                            <i class="fas fa-tags"></i>
+                            <span>Прайс</span>
+                        </button>
+                        <button class="profile-btn" onclick="window.open('https://t.me/heliys_konkurs', '_blank')">
+                            <i class="fas fa-star"></i>
+                            <span>Отзывы</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <footer>
+                <p>© 2023 Heliys. Все права защищены.</p>
+            </footer>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
